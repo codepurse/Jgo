@@ -1,0 +1,1 @@
+{"ast":null,"code":"var pickoff, dropoff;\npickoff = \"try\";","map":{"version":3,"sources":["C:/Users/Alfon/Documents/Work Projects/Github/Jgo/public/Script/jgo.js"],"names":["pickoff","dropoff"],"mappings":"AAAA,IAAIA,OAAJ,EAAaC,OAAb;AAEAD,OAAO,GAAG,KAAV","sourcesContent":["var pickoff, dropoff;\r\n\r\npickoff = \"try\"\r\n\r\n"]},"metadata":{},"sourceType":"script"}

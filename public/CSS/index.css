@@ -1,0 +1,301 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.mainCon {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url('/Image/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mainCon2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('/Image/bg2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mainCon3 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url('/Image/bg3.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-right: 15px;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: #CF511F;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px !important;
+    }
+}
+
+.pTitle {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.pText {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 0.9em;
+}
+
+.pText>span {
+    color: #CF511F;
+}
+
+.box {
+    background-color: rgba(59, 56, 52, 0.8);
+    border-radius: 25px;
+    padding: 25px;
+    width: 100%;
+}
+
+.txt {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background-color: transparent;
+    font-weight: 600;
+    width: 100%;
+}
+
+.location-search-input {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background-color: transparent;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-suggestion {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid dotted;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    padding-left: 10px;
+}
+
+.autocomplete-dropdown-container {
+    margin-top: 5px;
+    border-radius: 10px !important;
+    position: absolute;
+    z-index: 1000;
+    overflow: hidden;
+    perspective: 1px;
+}
+
+.btnSubmit {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: #CF511F;
+    border: 0px;
+    border-radius: 43px;
+    padding: 10px;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnBook {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: #CF511F;
+    border: 0px;
+    border-radius: 43px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.imgScooter {
+    width: 120% !important;
+    margin-left: -200px;
+}
+
+.imgGps {
+    width: 35px;
+}
+
+.pDefault {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.conMap {
+    background-color: #FDF8F7;
+    position: relative;
+    padding-left: 50px !important;
+}
+
+.pPick {
+    font-family: 'Open Sans', sans-serif;
+    color: #CF511F;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.pPick-up, .pDrop-off {
+    font-family: 'Open Sans', sans-serif;
+    color: #1A1A1A;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.divCategory {
+    margin-top: 5%;
+}
+
+.pNote {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 25px;
+}
+
+.boxCategory {
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #CF511F;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.imgCategory {
+    width: 25px;
+}
+
+.pBoxCategory {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.hover {
+    position: relative;
+}
+
+.hover:hover .hover__no-hover {
+    opacity: 0;
+}
+
+.hover:hover .hover__hover {
+    opacity: 1;
+}
+
+.hover__hover {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.hover__no-hover {
+    opacity: 1;
+}
+
+.pNote {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    text-decoration: underline;
+}
+
+.pAdditional {
+    font-family: 'Open Sans', sans-serif;
+    color: #CF511F;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.boxAdditional {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #CF511F;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 7px;
+}
+
+.pAdditonalBox {
+    font-family: 'Open Sans', sans-serif;
+    color: #1A1A1A;
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pCardNumber {
+    font-family: 'Open Sans', sans-serif;
+    color: #1A1A1A;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.navbarMaps {
+    position: absolute;
+}
+
+.navText {
+    font-family: 'Open Sans', sans-serif;
+    color: #1A1A1A;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0px 10px;
+    display: inline;
+    cursor: pointer;
+}
