@@ -1,19 +1,39 @@
 import React, { Component } from "react";
 import Layout from "../components/mapLayout";
 import Googlemap from "../components/try";
-import '../components/config';
-
+import "../components/config";
 
 export class map extends Component {
   constructor(props) {
     super(props);
-    this.clickBox = this.clickBox.bind(this);
-  }
-  clickBox() {
-
   }
 
+  getComponent(event) {
+    if (event.currentTarget.style.backgroundColor === "#CF511F") {
+      $(event.currentTarget).css({
+        "background-color": "white",
+      });
+      $(event.currentTarget).find('.pBoxCategory').css ({
+        "color": "black",
+      });
+        $(event.currentTarget).find('img').css ({
+        "filter": "brightness(0) invert(0)",
+      });
+    }
+    else {
+      $(event.currentTarget).css({
+        "background-color": "#CF511F",
+      });
+      $(event.currentTarget).find('.pBoxCategory').css ({
+        "color": "white",
+      });
+        $(event.currentTarget).find('img').css ({
+        "filter": "brightness(0) invert(1)",
+      });
+    }
 
+    
+  }
   render() {
     return (
       <Layout>
@@ -46,9 +66,7 @@ export class map extends Component {
                 ></img>{" "}
                 Pick Up Location
               </p>
-              <p className="pPick-up">
-              {global.config.place.deliver.pickoff}
-              </p>
+              <p className="pPick-up">{global.config.place.deliver.pickoff}</p>
               <p className="pPick" style={{ marginTop: "30px" }}>
                 {" "}
                 <img
@@ -58,9 +76,7 @@ export class map extends Component {
                 ></img>
                 Drop Off Location
               </p>
-              <p className="pDrop-off">
-              {global.config.place.deliver.dropoff}
-              </p>
+              <p className="pDrop-off">{global.config.place.deliver.dropoff}</p>
               <p className="pNote">Note: Delivery only within Metro Manila</p>
               <div className="divCategory">
                 <p className="pPick" style={{ fontSize: "1rem" }}>
@@ -70,7 +86,7 @@ export class map extends Component {
                   <div className="col">
                     <div
                       className="boxCategory align-items-center d-flex justify-content-center"
-                      onClick={this.clickBox}
+                      onClick={this.getComponent.bind(this)}
                     >
                       <div>
                         <img
@@ -84,7 +100,7 @@ export class map extends Component {
                   <div className="col">
                     <div
                       className="boxCategory align-items-center d-flex justify-content-center"
-                      onClick={this.clickBox}
+                      onClick={this.getComponent.bind(this)}
                     >
                       <div>
                         <img
@@ -96,7 +112,10 @@ export class map extends Component {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="boxCategory align-items-center d-flex justify-content-center">
+                    <div
+                      className="boxCategory align-items-center d-flex justify-content-center"
+                      onClick={this.getComponent.bind(this)}
+                    >
                       <div>
                         <img
                           src="Image/clothing.svg"
@@ -107,7 +126,10 @@ export class map extends Component {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="boxCategory align-items-center d-flex justify-content-center">
+                    <div
+                      className="boxCategory align-items-center d-flex justify-content-center"
+                      onClick={this.getComponent.bind(this)}
+                    >
                       <div>
                         <img
                           src="Image/medical.svg"
@@ -118,7 +140,10 @@ export class map extends Component {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="boxCategory align-items-center d-flex justify-content-center">
+                    <div
+                      className="boxCategory align-items-center d-flex justify-content-center"
+                      onClick={this.getComponent.bind(this)}
+                    >
                       <div>
                         <img
                           src="Image/001-file.svg"
@@ -129,7 +154,10 @@ export class map extends Component {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="boxCategory align-items-center d-flex justify-content-center">
+                    <div
+                      className="boxCategory align-items-center d-flex justify-content-center"
+                      onClick={this.getComponent.bind(this)}
+                    >
                       <div>
                         <img
                           src="Image/other.svg"
@@ -185,8 +213,8 @@ export class map extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-           <Googlemap></Googlemap>
+            <div className="col-lg-6 colMap">
+              <Googlemap></Googlemap>
             </div>
           </div>
         </div>
